@@ -1,14 +1,29 @@
 # Radiative Rigidity and Two-Photon Exchange
 
-Structural framework: long-distance nuclear electroweak radiative corrections collapse to an effectively rank-1 mode in the scalar–isoscalar channel, with two-photon exchange as the unique long-distance generator.
+Structural constraints on long-distance nuclear electroweak radiative corrections.
+
+## Summary
+
+This repository contains the manuscript:
+
+**Radiative Rigidity and Two-Photon Exchange — A Structural Resolution of Nuclear Electroweak Uncertainties**
+
+The paper develops a rigidity framework showing that certain classes of
+radiative corrections are forced into low-rank geometric forms, leading
+to universal consistency relations across nuclear systems.
 
 ## Contents
-- `paper/` — LaTeX source (manuscript).
-- `supplementary/` — supplementary notes (if any).
-- `artifacts/` — optional audit artifacts (hash manifests, frozen PDFs).
+
+- `paper.pdf` — main manuscript (Rev2, frozen)
+- No code or simulations are required for the core result.
 
 ## Status
-Submission-ready (Rev2 frozen).
 
-## Citation
-See `CITATION.cff`.
+Submission-ready theoretical result.
+Primary target venue: *Foundations of Physics*.
+
+## Author
+
+Inacio F. Vasquez  
+Independent Researcher  
+ORCID: 0009-0008-8459-3400

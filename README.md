@@ -1,49 +1,82 @@
-# Radiative Rigidity and Two-Photon Exchange
+# Radiative Rigidity and Two-Photon Exchange  
 **A Structural Resolution of Nuclear Electroweak Uncertainties**
 
 ---
 
-### 🛡️ Institutional Verification
-* **Artifact Type:** Primary Manuscript (Theoretical Physics)
-* **Status:** Post-Review Refinement / Core Result Frozen
-* **Framework Alignment:** Unified Rigidity Framework (URF) — Geometric Constraint Layer
-* **Registry ID:** `ART-PHYS-01`
+## Scope
+
+This repository is a **Tier A module** in the **Scientific Infrastructure (URF)**.  
+It represents the **applied / structural physics layer** of the Unified Rigidity Framework.
+
+It contains:
+- a frozen theoretical manuscript,
+- structural rigidity theorems for nuclear electroweak corrections,
+- deterministic consistency relations,
+- geometry-based reduction principles.
+
+No simulations, numerical fits, or stochastic models are required.  
+All results are closed-form and analytically verifiable.
+
+---
+
+## Institutional Verification
+
+- **Artifact Type:** Primary Manuscript (Theoretical Physics)  
+- **Status:** Core Result Frozen  
+- **Framework Alignment:** Unified Rigidity Framework (URF) — Geometric Constraint Layer  
+- **Registry ID:** ART-PHYS-01  
 
 ---
 
 ## Significance Statement
-This work establishes that long-distance nuclear electroweak radiative corrections are governed by **Structural Rigidity** rather than stochastic variance. By demonstrating that these corrections are forced into **low-rank geometric forms**, the manuscript provides universal consistency relations that drastically reduce the parameter space for two-photon exchange (TPE) effects across nuclear systems.
 
-## Key Results
-* **Geometric Force-Closure:** Proving that radiative corrections satisfy rigidity constraints analogous to operator spectral gaps.
-* **Low-Rank Reduction:** Transitioning complex electroweak sums into a deterministic geometric regime.
-* **Universal Consistency Relations:** Providing a framework independent of specific nuclear models, rooted in fundamental symmetry invariants.
+This work establishes that long-distance nuclear electroweak radiative corrections are governed by **structural rigidity** rather than statistical variance.
+
+Specifically, it proves that two-photon exchange (TPE) contributions are forced into **low-rank geometric forms**, yielding:
+
+- universal consistency relations,
+- model-independent constraints,
+- deterministic bounds on nuclear uncertainties.
+
+This replaces ad-hoc parameter fitting with **structural necessity**.
+
+---
+
+## Core Results
+
+### 1. Geometric Force-Closure
+
+Radiative corrections satisfy rigidity constraints analogous to spectral gap phenomena:
+long-distance effects collapse into a finite-dimensional geometric subspace.
+
+### 2. Low-Rank Reduction
+
+Infinite electroweak sums reduce to a small number of invariant geometric modes.
+
+### 3. Universal Consistency Relations
+
+Cross-nuclear TPE corrections obey relations independent of nuclear structure models,
+derived purely from symmetry and geometry.
+
+---
 
 ## Contents
-* **[paper.pdf](./paper.pdf):** Main Manuscript (Revision 2).
-* **Deterministic Proof:** The result is a closed-form structural resolution; no external code or simulations are required for verification.
 
-## Current Lifecycle
-The core mathematical proofs and consistency relations are **verified and frozen**. Following an initial editorial assessment in early 2026, the manuscript is currently undergoing structural refinement for submission to a specialized nuclear/mathematical physics venue. 
+- `paper.pdf` — Main Manuscript (Revision 2)
 
-> **Note on Uncertainty:** The internal logic regarding the collapse of electroweak uncertainties into geometric forms is complete. Current efforts are focused strictly on institutional alignment.
-
----
-
-## Contact & Citation
-For institutional inquiries or peer-review correspondence:
-
-* **Author:** Inacio F. Vasquez (Independent Researcher)
-* **Email:** [inacio@vasquezresearch.com](mailto:inacio@vasquezresearch.com)
-* **Web:** [www.vasquezresearch.com](https://www.vasquezresearch.com)
-* **ORCID:** [0009-0008-8459-3400](https://orcid.org/0009-0008-8459-3400)
+The manuscript contains:
+- full theorem statements,
+- complete derivations,
+- closed-form consistency relations,
+- no external dependencies.
 
 ---
-© 2026 Inacio F. Vasquez. Independent Research Program.
-This repository is a Tier A module in the Scientific Infrastructure.
-It contains a canonical component of the Unified Rigidity Framework (URF).
-- v1.0 — Canonical Scientific Infrastructure release.
-All results are reproducible from the contents of this repository.
-Build and execution instructions are provided in this README.
-Root manifest:
-https://github.com/inaciovasquez2020/scientific-infrastructure
+
+## Reproducibility
+
+All results are deterministic.
+
+Verification consists of:
+
+```bash
+open paper.pdf

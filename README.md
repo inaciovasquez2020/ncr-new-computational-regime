@@ -80,3 +80,21 @@ Verification consists of:
 
 ```bash
 open paper.pdf
+
+
+# Low-dimensional structure in nuclear radiative corrections
+
+This repository analyzes published superallowed 0⁺→0⁺ beta decay data
+(Hardy & Towner 2020, arXiv:2009.00270) and tests the structure of the
+nucleus-dependent radiative correction δ_NS.
+
+Method:
+- Use the (Z, A, δ_NS) dataset for the canonical superallowed nuclei.
+- Standardize variables and run PCA.
+
+Result (empirical):
+- The data exhibit strong dimensional reduction.
+- Robust tests indicate an effective dimensionality ≈ 2 (not 1).
+
+This is a data-driven analysis only; no theoretical model is assumed.
+

@@ -21,7 +21,7 @@ print(pca.explained_variance_ratio_)
 # Plot spectrum
 plt.figure()
 plt.plot(pca.explained_variance_ratio_, marker='o')
-plt.title("Radiative Rigidity Test: PCA Spectrum")
+plt.title("Low-dimensional structure of δ_NS")
 plt.xlabel("Component")
 plt.ylabel("Explained Variance Ratio")
 plt.savefig("figures/pca_spectrum.png")

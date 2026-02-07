@@ -16,3 +16,6 @@ dependencies = [
 [tool.setuptools]
 package-dir = {"" = "src"}
 packages = ["radiative_rigidity"]
+
+[project.optional-dependencies]
+all = ["pandas","scikit-learn"]

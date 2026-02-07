@@ -1,2 +1,2 @@
 def test_import():
-    import src.pca_radiative_rigidity
+    import radiative_rigidity.core

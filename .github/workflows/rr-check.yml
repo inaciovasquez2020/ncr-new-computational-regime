@@ -1,0 +1,31 @@
+name: rr-check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Lean toolchain
+        uses: leanprover/lean-action@v1
+        with:
+          build: false
+
+      - name: Radiative Rigidity check
+        run: |
+          if [ -f lakefile.lean ] || [ -f lakefile.toml ]; then
+            lake build
+          else
+            echo "No lakefile found; repository structure unclear"
+            exit 1
+          fi

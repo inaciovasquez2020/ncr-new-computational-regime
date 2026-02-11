@@ -30,3 +30,9 @@ If you use this research or the associated implementation in your work, please c
   year   = {2026},
   url    = {[https://github.com/inaciovasquez2020/radiative-rigidity](https://github.com/inaciovasquez2020/radiative-rigidity)}
 }
+
+## Quickstart (60 seconds)
+
+```bash
+./scripts/radius check
+```

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cmd="${1:-check}"
+
+case "$cmd" in
+  check)
+    echo "Radiative Rigidity basic check"
+    # placeholder for actual build step
+    test -f README.md && echo "README exists"
+    ;;
+  *)
+    echo "Usage: ./scripts/radius check"
+    ;;
+esac

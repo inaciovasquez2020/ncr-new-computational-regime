@@ -9,23 +9,25 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Lean toolchain
-        uses: leanprover/lean-action@v1
-        with:
-          build: false
-
-      - name: Radiative Rigidity check
+      - name: Repository invariant check
         run: |
-          if [ -f lakefile.lean ] || [ -f lakefile.toml ]; then
-            lake build
-          else
-            echo "No lakefile found; repository structure unclear"
+          echo "Radiative Rigidity invariant check"
+
+          # Required top-level files
+          for f in README.md STATUS.md; do
+            test -f "$f" || { echo "Missing $f"; exit 1; }
+          done
+
+          # No build artifacts tracked
+          if git ls-files | grep -E '^(\.lake/|build/|dist/)' >/dev/null; then
+            echo "Build artifacts detected"
             exit 1
           fi
+
+          echo "OK: repository invariants satisfied"

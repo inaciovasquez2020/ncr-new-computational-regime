@@ -1,0 +1,23 @@
+{
+  "grid_I": 5,
+  "grid_J": 6,
+  "observed": 15,
+  "k1": {
+    "chi2": 2.4816904460422498,
+    "dof": 5,
+    "chi2_per_dof": 0.49633808920844996,
+    "relative_L2_residual": 0.3276728862706519,
+    "weighted_RMS_residual": 0.4067505743525754
+  },
+  "k2": {
+    "chi2": 2.631883004604431e-14,
+    "dof": -3,
+    "chi2_per_dof": null,
+    "relative_L2_residual": 2.837793177687966e-08,
+    "weighted_RMS_residual": 4.1887810514949184e-08
+  },
+  "delta": {
+    "delta_chi2": 2.4816904460422236,
+    "delta_dof": 8
+  }
+}

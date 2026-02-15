@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{ISR as a Normalization-Resistant Polynomial Regime}
+\author{Inacio F. Vasquez}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We exhibit an executable computational regime, the Implicit State Reduction (ISR) model, which runs in polynomial time yet resists normalization into transcript-compressible refinement systems. The regime admits fast local evolution while provably failing to admit bounded-information summaries compatible with URF-style normalization. This provides a concrete separation between runtime efficiency and normalization admissibility.
+\end{abstract}
+
+\section{Motivation}
+Most known polynomial-time computational models admit some form of transcript normalization: their executions can be compressed into bounded-width, locality-respecting refinement processes without loss of correctness. The Unified Rigidity Framework (URF) formalizes this intuition and identifies entropy-based barriers governing admissible refinement.
+
+ISR is constructed to violate this expectation. Although each step is polynomial-time and locally defined, the induced state evolution exhibits collision patterns that cannot be normalized without exceeding transcript capacity bounds.
+
+\section{The ISR Model}
+An ISR system maintains an implicit global state represented abstractly by a compressed decision structure. Updates are driven by local constraints (clauses, XOR relations), but the state evolution includes controlled non-linear mixing that preserves runtime efficiency while destroying normalization invariants.
+
+Formally, ISR maintains:
+\begin{itemize}
+\item an implicit state magnitude $S_t$,
+\item a trace of structural summaries $(\text{count}_t, \text{nodes}_t)$,
+\item deterministic update rules parameterized by local constraints.
+\end{itemize}
+
+All updates run in polynomial time in the number of variables.
+
+\section{Barrier Property}
+Define $P(S_t)$ to be an implicit dimension proxy extracted from the ISR state. Empirically and structurally, $P$ satisfies:
+\begin{itemize}
+\item monotonicity under URF-admissible refinements,
+\item bounded per-step entropy loss for normalized systems,
+\item super-polynomial growth along ISR traces.
+\end{itemize}
+
+This violates the URF per-step entropy loss bound and blocks normalization.
+
+\section{Normalization Failure}
+We implement a normalization attempt harness that:
+\begin{enumerate}
+\item records ISR traces,
+\item attempts compression into URF transcripts under fixed bit budgets,
+\item detects invariant-preserving collisions.
+\end{enumerate}
+
+The harness deterministically fails on ISR instances, emitting a signed failure certificate. The failure persists across seeds and parameter scales.
+
+\section{Separation Result}
+ISR demonstrates a strict separation:
+\[
+\text{Polynomial-time execution} \;\;\not\Rightarrow\;\; \text{Normalization admissibility}.
+\]
+
+This shows that runtime efficiency alone does not guarantee compatibility with refinement-based complexity analyses.
+
+\section{Status and Artifacts}
+The ISR regime is released as an executable, sealed artifact with:
+\begin{itemize}
+\item deterministic core model,
+\item regression tests and CI verification,
+\item normalization-failure certificates,
+\item Zenodo DOI and immutable release tag.
+\end{itemize}
+
+All artifacts are publicly available at
+\[
+\href{https://github.com/inaciovasquez2020/ncr-new-computational-regime}{github.com/inaciovasquez2020/ncr-new-computational-regime}.
+\]
+
+\section{Outlook}
+Remaining work includes automated extraction of minimal divergence indices and integration of ISR as a formal corollary within the Chronos / URF hierarchy.
+
+\end{document}
+

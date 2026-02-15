@@ -21,22 +21,18 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python3 -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Run unit tests
+      - name: Run tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: |
-          export PYTHONPATH="$(pwd)"
-          python3 -m pytest -q
+          python -m pytest -q
 
-      - name: Run normalization attempt (module mode)
+      - name: Run normalization attempt
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: |
-          export PYTHONPATH="$(pwd)"
-          python3 -m scripts.normalization_attempt
-
-     - name: Run normalization attempt
-       env:
-         PYTHONPATH: ${{ github.workspace }}
-         run: python3 scripts/normalization_attempt.py
+          python scripts/normalization_attempt.py
 

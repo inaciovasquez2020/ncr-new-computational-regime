@@ -1,4 +1,6 @@
 ## Manuscript
+- manuscript/ISR_as_a_Normalization_Resistant_Polynomial_Regime.md
+## Manuscript
 A minimal structural note documenting the normalization-resistant ISR regime is included:
 - manuscript/ISR_Normalization_Resistance.md
 

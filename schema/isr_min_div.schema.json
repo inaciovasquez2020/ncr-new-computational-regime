@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ISR_MIN_DIV Certificate",
+  "type": "object",
+  "required": ["meta", "witness"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["schema", "claim", "expected_key_id"],
+      "properties": {
+        "schema": {
+          "type": "string",
+          "const": "aiv-cert-v1"
+        },
+        "claim": {
+          "type": "string"
+        },
+        "expected_key_id": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "witness": {
+      "type": "object",
+      "required": [
+        "min_divergence_index",
+        "min_divergence_reason",
+        "traces"
+      ],
+      "properties": {
+        "min_divergence_index": {
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "min_divergence_reason": {
+          "type": "string",
+          "enum": [
+            "count_divergence",
+            "node_divergence",
+            "no_divergence_detected"
+          ]
+        },
+        "traces": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["trace"],
+            "properties": {
+              "trace": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["count", "nodes"],
+                  "properties": {
+                    "count": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "nodes": {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}
+

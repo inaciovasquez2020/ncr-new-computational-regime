@@ -14,3 +14,6 @@ jobs:
       - run: python3 -m pip install --upgrade pip
       - run: python3 -m pip install -r requirements-dev.txt
       - run: python3 -m pytest -q
+      - run: python3 scripts/oracle_audit.py
+      - run: python3 scripts/run_isr_demo.py | head -n 40
+      - run: python3 scripts/normalization_attempt.py

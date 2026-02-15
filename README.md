@@ -1,11 +1,14 @@
-NCR — New Computational Regime
+NCR — New Computational Regime (ISR)
 
-Objective
-Exhibit a discrete, reproducible computational regime M that is polynomial-time yet not normalizable into URF-admissible fixed-locality, bounded-transcript refinement models.
+ISR = Implicit Superposition Register
+Discrete, deterministic model whose state is a reduced ordered decision diagram representing an exponentially large set of assignments.
+Updates apply constraints by symbolic conjunction without enumerating assignments.
 
-Deliverables
-1) Formal model definition (docs/MODEL.md)
-2) Candidate separation invariant P (docs/INVARIANTS.md)
-3) Normalization-failure certificates (examples/)
-4) Deterministic verifier scripts (scripts/)
-5) CI: deterministic checks (pytest)
+Artifacts
+docs/MODEL.md
+docs/INVARIANTS.md
+model/isr.py
+scripts/run_isr_demo.py
+scripts/normalization_attempt.py
+scripts/oracle_audit.py
+tests/

@@ -30,6 +30,15 @@ jobs:
         run: |
           python -m pytest -q
 
+      - name: Build witness + divergence index
+        run: |
+          export PYTHONPATH=${{ github.workspace }}
+          python3 scripts/make_isr_cert.py
+          python3 scripts/extract_divergence.py \
+            --trace certs/ISR_NORM_FAIL_0001.json \
+            --out certs/ISR_MIN_DIV_0001.json
+          jq '.witness.min_divergence_index' certs/ISR_MIN_DIV_0001.json
+
       - name: Run normalization attempt
         env:
           PYTHONPATH: ${{ github.workspace }}

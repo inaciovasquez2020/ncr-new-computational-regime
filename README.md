@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18651031.svg)](https://doi.org/10.5281/zenodo.18651031)
 ## Manuscript
 - manuscript/ISR_as_a_Normalization_Resistant_Polynomial_Regime.md
 ## Manuscript

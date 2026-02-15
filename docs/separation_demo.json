@@ -1,0 +1,21 @@
+ISR separation demo
+nvars = 20
+
+Applying identical prefix
+state = 262380
+state = 131294
+state = 65644
+
+Applying sign-divergent clause
+A state: 32791
+B state: 32879
+
+Trace comparison
+0 A(count,nodes)= (1048576, 1) B(count,nodes)= (1048576, 1)
+1 A(count,nodes)= (262380, 1) B(count,nodes)= (262380, 1)
+2 A(count,nodes)= (131294, 1) B(count,nodes)= (131294, 1)
+3 A(count,nodes)= (65644, 1) B(count,nodes)= (65644, 1)
+4 A(count,nodes)= (32791, 1) B(count,nodes)= (32879, 1)
+
+Result
+separation witnessed: fast evolution, non-normalizable

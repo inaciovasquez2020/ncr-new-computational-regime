@@ -62,6 +62,8 @@
     }
   ],
   "witness": {
+    "min_divergence_index": null,
+    "min_divergence_reason": "no_divergence_detected",
     "traces": [
       {
         "trace": [

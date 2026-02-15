@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "schema": "aiv-cert-v1",
+    "claim": "ISR normalization failure",
+    "expected_key_id": "2E665CBC9B3CE50A"
+  },
+  "params": {
+    "nvars": 10
+  },
+  "program": [
+    {
+      "op": "clause",
+      "a": [
+        1,
+        2,
+        3
+      ],
+      "b": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "op": "clause",
+      "a": [
+        -1,
+        2,
+        3
+      ],
+      "b": [
+        3,
+        2,
+        -1
+      ]
+    },
+    {
+      "op": "clause",
+      "a": [
+        1,
+        -2,
+        3
+      ],
+      "b": [
+        3,
+        -2,
+        1
+      ]
+    },
+    {
+      "op": "clause",
+      "a": [
+        1,
+        2,
+        -3
+      ],
+      "b": [
+        -3,
+        2,
+        1
+      ]
+    }
+  ]
+}

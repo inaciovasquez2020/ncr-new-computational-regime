@@ -62,46 +62,54 @@
     }
   ],
   "witness": {
-    "min_divergence_index": null,
-    "min_divergence_reason": "no_divergence_detected",
+    "min_divergence_index": 1,
+    "min_divergence_reason": "count_or_nodes_mismatch",
     "traces": [
       {
         "trace": [
           {
-            "count": 4096,
+            "count": 1024,
             "nodes": 1
           },
           {
-            "count": 1259,
-            "nodes": 2
+            "count": 492,
+            "nodes": 1
           },
           {
-            "count": 723,
-            "nodes": 3
+            "count": 141,
+            "nodes": 1
           },
           {
-            "count": 180,
-            "nodes": 4
+            "count": 40,
+            "nodes": 1
+          },
+          {
+            "count": 243,
+            "nodes": 1
           }
         ]
       },
       {
         "trace": [
           {
-            "count": 4096,
+            "count": 1024,
             "nodes": 1
           },
           {
-            "count": 1259,
-            "nodes": 2
+            "count": 274,
+            "nodes": 1
           },
           {
-            "count": 723,
-            "nodes": 3
+            "count": 82,
+            "nodes": 1
           },
           {
-            "count": 180,
-            "nodes": 4
+            "count": 114,
+            "nodes": 1
+          },
+          {
+            "count": 58,
+            "nodes": 1
           }
         ]
       }

@@ -1,3 +1,7 @@
+## Manuscript
+A minimal structural note documenting the normalization-resistant ISR regime is included:
+- manuscript/ISR_Normalization_Resistance.md
+
 NCR — New Computational Regime (ISR)
 
 ISR = Implicit Superposition Register

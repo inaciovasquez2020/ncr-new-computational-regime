@@ -35,3 +35,8 @@ jobs:
           export PYTHONPATH="$(pwd)"
           python3 -m scripts.normalization_attempt
 
+     - name: Run normalization attempt
+       env:
+         PYTHONPATH: ${{ github.workspace }}
+         run: python3 scripts/normalization_attempt.py
+

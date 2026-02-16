@@ -15,6 +15,13 @@ This repository is a registered module of the Vasquez Index. Stable references, 
 * **Infrastructure:** [scientific-infrastructure](https://github.com/inaciovasquez2020/scientific-infrastructure)
 
 ---
+Physics statement
+
+The core physics claim supported by this repository is stated cleanly and independently of the verification machinery here:
+
+docs/PHYSICS_STATEMENT.md
+
+Readers interested in the physics result should start there. This repository exists to make that claim checkable and reproducible.
 
 ## Technical Notes
 * **Reproducibility:** To ensure consistent results, follow the environment configurations defined in the `scientific-infrastructure` module.

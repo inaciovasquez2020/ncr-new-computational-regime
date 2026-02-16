@@ -11,6 +11,12 @@ A4 Unitarity (optical theorem consistency for the channels used)
 A5 Analyticity and crossing in the stated kinematic domain (no unexpected singular structure)
 A6 The hadronic or nuclear structure input used here is within its declared validity class [INPUT CLASS DESCRIPTION]
 
+Scope diagram
+
+![Scope of the claim](figures/physics_scope.svg)
+
+The diagram indicates how standard QED constraints limit the effect of two-photon exchange on the observable within the stated domain.
+
 What would falsify this
 F1 Gauge violation signature
 An explicit calculation or measurement implying a Ward identity violation large enough to account for a shift greater than [EPSILON] in [OBSERVABLE X]

@@ -1,0 +1,20 @@
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="640" height="360" fill="white"/>
+
+  <rect x="60" y="80" width="220" height="120" fill="none" stroke="black" stroke-width="2"/>
+  <text x="70" y="105" font-size="14">Standard QED</text>
+  <text x="70" y="125" font-size="12">Gauge invariance</text>
+  <text x="70" y="140" font-size="12">Locality</text>
+  <text x="70" y="155" font-size="12">Renormalizability</text>
+
+  <rect x="360" y="80" width="220" height="120" fill="none" stroke="black" stroke-width="2"/>
+  <text x="370" y="105" font-size="14">Observable X</text>
+  <text x="370" y="130" font-size="12">Two-photon exchange</text>
+  <text x="370" y="145" font-size="12">Bounded correction</text>
+
+  <line x1="280" y1="140" x2="360" y2="140" stroke="black" stroke-width="2"/>
+  <polygon points="360,140 350,135 350,145" fill="black"/>
+
+  <text x="240" y="170" font-size="12">Constraints</text>
+</svg>
+

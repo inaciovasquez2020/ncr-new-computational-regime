@@ -1,0 +1,8 @@
+{
+  "schema_version": "urf:ncr-cert:1.0",
+  "certificate_id": "URF_NCR_CERT_NEG_0001",
+  "kind": "NEGATIVE",
+  "claim": "The provided instance does not satisfy NCR admissibility conditions.",
+  "status": "Verified-Negative",
+  "notes": "NEG-only artifact. No positive NCR claim asserted."
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "URF NCR Certificate",
+  "type": "object",
+  "required": ["schema_version","certificate_id","kind","claim","status"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "certificate_id": { "type": "string" },
+    "kind": { "enum": ["NEGATIVE"] },
+    "claim": { "type": "string" },
+    "status": { "type": "string" },
+    "notes": { "type": "string" }
+  }
+}

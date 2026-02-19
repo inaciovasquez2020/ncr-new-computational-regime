@@ -26,15 +26,15 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
+          python-version: "3.11"
 
       - name: Cache pip
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles("requirements.txt") }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
-          python-version: "3.11"
 
       - name: Guard — Python sanity
         run: |
@@ -50,12 +50,14 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run tests
+        id: tests
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: |
           python -m pytest -q
 
       - name: Build witness + divergence index
+        if: success()
         run: |
           export PYTHONPATH=${{ github.workspace }}
           python scripts/make_isr_cert.py
@@ -65,6 +67,7 @@ jobs:
           jq '.witness.min_divergence_index' certs/ISR_MIN_DIV_0001.json
 
       - name: Run normalization attempt
+        if: success()
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: |

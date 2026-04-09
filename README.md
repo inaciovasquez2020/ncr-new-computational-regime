@@ -58,6 +58,10 @@ This repository does **not**:
 
 ---
 
+
+## Conditional note
+- `notes/WITNESS_TIGHTENING_CONDITIONAL_SCOPE_2026_04.md` — conditional note specifying the minimal witness-tightening artifact compatible with current NCR scope.
+
 ## Certification Boundary
 
 This repository is **NON-CERTIFIED under URF**.

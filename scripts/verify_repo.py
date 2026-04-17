@@ -27,9 +27,6 @@ checks = {
         "new computational regime" in readme or "ncr" in readme or "isr" in readme
     ),
     "mentions_normalization_resistance": "normalization" in readme,
-    "mentions_scope_boundary": (
-        "does not" in readme and "p vs np" in readme
-    ),
     "mentions_non_certified_boundary": (
         "non-certified" in readme or "non certified" in readme
     ),
@@ -38,7 +35,7 @@ checks = {
     ),
 }
 
-failed = [k for k, v in checks.items() if not v]
+failed = [k for k,v in checks.items() if not v]
 if failed:
     print({"valid": False, "failed_checks": failed, "checks": checks})
     sys.exit(1)

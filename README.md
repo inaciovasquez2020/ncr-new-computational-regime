@@ -71,3 +71,7 @@ No positive NCR claim is asserted.
 All results are research or infrastructure-only.
 
 Certification artifacts are declarative, cryptographically signed, and inert with respect to CI and runtime behavior.
+
+## Lean proof portfolio classification
+
+This repository is governed by [`docs/status/LEAN_PROOF_PORTFOLIO_CLASSIFICATION.md`](docs/status/LEAN_PROOF_PORTFOLIO_CLASSIFICATION.md). Its role in the portfolio is explicitly classified as proof-facing, conditional frontier, infrastructure/documentation, or legacy/scaffold.
